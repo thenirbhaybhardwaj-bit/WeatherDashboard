@@ -31,7 +31,7 @@ function App() {
   };
 
   const isTempHigh = data && data.temp > tempThreshold;
-  const isRaining = data && data.rain > 0.5;
+  const isRaining = data && data.rain < 0.5;
 
   return (
     <div style={{ paddingBottom: '3rem' }}>
