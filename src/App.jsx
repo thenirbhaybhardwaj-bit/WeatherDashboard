@@ -115,8 +115,8 @@ function App() {
           />
           <KPICard 
             label="Rainfall" 
-            value={data?.rain} 
-            unit="mm" 
+            value={data?.rain == 0 ? "Yes" : "No"} 
+            // unit="mm" 
             icon={CloudRain} 
             color="#06b6d4" 
             loading={loading && !data}
