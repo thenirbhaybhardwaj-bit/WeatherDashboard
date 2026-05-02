@@ -120,7 +120,7 @@ function App() {
             icon={CloudRain} 
             color="#06b6d4" 
             loading={loading && !data}
-            trend={data?.rain > 0 ? 1 : 0}
+            trend={data?.rain > 0 ? 0 : 1}
           />
           <div style={{ gridColumn: 'span 1' }}>
              <RainIndicator isRaining={isRaining} loading={loading && !data} />
